@@ -35,7 +35,7 @@
 </details>
 
 ## Usage
-1. Download the file with your desired flavour e.g. `mocha.css` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
+1. Download the file with your desired flavour e.g. `mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
 2. Copy it into your hyprland config e.g. `~/.config/hypr/`
 3. Include the file at the top of your `hyprland.conf`
    - `source=~/.config/hypr/mocha.conf` 
