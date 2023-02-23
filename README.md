@@ -42,7 +42,7 @@
 4. When using the colors, use `$COLOR` e.g. `$base`
 
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 
 -	Q: **_"Hyprland doesn't work with the colors"_**\
 	A: Make sure you included the file in the right place and you are using `$COLOR`
