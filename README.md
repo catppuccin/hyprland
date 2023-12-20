@@ -35,22 +35,22 @@
 </details>
 
 ## Usage
-1. Download the file with your desired flavour e.g. `mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
+
+1. Download the file with your desired flavour e.g. `catppuccin-mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
 2. Copy it into your hyprland config e.g. `~/.config/hypr/`
 3. Include the file at the top of your `hyprland.conf`
-   - `source=~/.config/hypr/mocha.conf` 
+    - `source=~/.config/hypr/catppuccin-mocha.conf`
 4. When using the non-alpha colors, use `$COLOR` e.g. `$base`
 5. When using the alpha colors use something like `0xff$COLORAlpha` e.g. `0xff$surface0Alpha`
 
-
 ## 🙋 FAQ
 
--	Q: **_"Hyprland doesn't work with the colors"_**\
-	A: Make sure you included the file in the right place and you are using `$COLOR`
+-   Q: **_"Hyprland doesn't work with the colors"_**\
+    A: Make sure you included the file in the right place and you are using `$COLOR`
 
 ## 💝 Thanks to
 
-- [rubyowo](https://github.com/rubyowo)
+-   [rubyowo](https://github.com/rubyowo)
 
 &nbsp;
 
