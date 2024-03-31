@@ -1,0 +1,12 @@
+---
+whiskers:
+    version: "2.0.0"
+    matrix:
+        - flavor
+    filename: "themes/{{flavor.identifier}}.conf"
+---
+
+{% for name, color in flavor.colors %}
+${{ name }} = rgb({{ color.hex }})
+${{ name }}Alpha = {{ color.hex }}
+{% endfor %}
