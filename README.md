@@ -35,13 +35,13 @@
 </details>
 
 ## Usage
+
 1. Download the file with your desired flavour e.g. `mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
 2. Copy it into your hyprland config e.g. `~/.config/hypr/`
 3. Include the file at the top of your `hyprland.conf`
-   - `source=~/.config/hypr/mocha.conf` 
+   - `source=~/.config/hypr/mocha.conf`
 4. When using the non-alpha colors, use `$COLOR` e.g. `$base`
-5. When using the alpha colors use something like `0xff$COLORAlpha` e.g. `0xff$surface0Alpha`
-
+5. When using the alpha colors use something like `rgba($COLORAlpha<transparency>)` e.g. `rgba($surface0Alphaee)`
 
 ## 🙋 FAQ
 
