@@ -36,17 +36,49 @@
 
 ## Usage
 
-1. Download the file with your desired flavour e.g. `mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/`)
-2. Copy it into your hyprland config e.g. `~/.config/hypr/`
+Since Hyprland `0.55`, Hyprland configuration is done in Lua.
+
+This repository ships themes in both formats:
+
+- Lua themes (current): `themes/lua/*.lua`
+- Legacy `.conf` themes (deprecated): `themes/conf/*.conf` (will be dropped to follow upstream)
+
+### Hyprland >= 0.55 (Lua)
+
+1. Download the theme for your desired flavour, e.g. `mocha.lua` (from the [release](https://github.com/catppuccin/hyprland/releases/latest) or from `themes/lua/` after cloning)
+2. Copy it into your Hyprland config, e.g. `~/.config/hypr/themes/mocha.lua`
+3. Load it from your `hyprland.lua`
+
+```lua
+local colors = require('themes.mocha')
+```
+
+4. Use colors
+
+```lua
+-- Non-alpha values are already in Hyprland's rgb(...) format.
+local base = colors.base
+
+-- Alpha values are hex without transparency; append the alpha, eg. `ee` and wrap in rgba(...).
+local surface0_ee = rgba(colors.surface0Alpha .. 'ee')
+```
+
+### Legacy (conf)
+
+`themes/conf` contains the old Hyprland `.conf` variable format.
+This is deprecated and will be dropped to follow upstream.
+
+1. Download the file with your desired flavour e.g. `mocha.conf` (to be found in the [release](https://github.com/catppuccin/hyprland/releases/latest) or after cloning the repository in `themes/conf/`)
+2. Copy it into your Hyprland config e.g. `~/.config/hypr/themes/mocha.conf`
 3. Include the file at the top of your `hyprland.conf`
-   - `source=~/.config/hypr/mocha.conf`
+   - `source=~/.config/hypr/themes/mocha.conf`
 4. When using the non-alpha colors, use `$COLOR` e.g. `$base`
 5. When using the alpha colors use something like `rgba($COLORAlpha<transparency>)` e.g. `rgba($surface0Alphaee)`
 
 ## 🙋 FAQ
 
 -	Q: **_"Hyprland doesn't work with the colors"_**\
-	A: Make sure you included the file in the right place and you are using `$COLOR`
+	A: Make sure you are loading the correct theme file for your Hyprland version (`.lua` for >= 0.55) and referencing the values correctly (e.g. `colors.base`).
 
 ## 💝 Thanks to
 
