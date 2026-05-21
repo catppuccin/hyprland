@@ -1,4 +1,5 @@
 local M = {}
+
 M.rosewater = 'rgb(f5e0dc)'
 M.rosewaterAlpha = 'f5e0dc'
 
