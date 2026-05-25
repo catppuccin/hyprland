@@ -1,9 +1,9 @@
 ---
 whiskers:
-    version: "^2.4.0"
+    version: "^2.9.0"
     matrix:
         - flavor
-    filename: "themes/lua/{{flavor.identifier}}.lua"
+    filename: "themes/catppuccin-{{flavor.identifier}}.lua"
 ---
 local M = {}
 {% for name, color in flavor.colors %}
