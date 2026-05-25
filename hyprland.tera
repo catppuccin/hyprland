@@ -1,12 +1,13 @@
 ---
 whiskers:
-    version: 2.4.0
+    version: "^2.9.0"
     matrix:
         - flavor
-    filename: "themes/{{flavor.identifier}}.conf"
+    filename: "themes/catppuccin-{{flavor.identifier}}.lua"
 ---
-
+local M = {}
 {% for name, color in flavor.colors %}
-${{ name }} = rgb({{ color.hex }})
-${{ name }}Alpha = {{ color.hex }}
+M.{{ name }} = 'rgb({{ color.hex }})'
+M.{{ name }}Alpha = '{{ color.hex }}'
 {% endfor %}
+return M
